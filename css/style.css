@@ -1,0 +1,119 @@
+/*{
+    margin: 0;
+    padding: 0;
+    
+    direction: rtl;
+    font-family: Vazir;
+}*/
+
+@font-face { 
+    font-family: Vazir-Medium;
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Vazir-Medium.woff2') format('woff2'),
+    url('../fonts/Vazir-Medium.woff') format('woff'),
+    url('../fonts/Vazir-Medium.eot') format('eot');
+    
+    
+    
+
+}
+
+
+body{
+    
+    direction: rtl;
+    font-family: Vazir-Medium !important
+    
+       /*font-family: 'iransans';*/
+}
+
+#main-menu{
+    direction: rtl;
+}
+
+#main-menu .navbar-nav .nav-link{
+    color: white;
+}
+
+.m-login{
+    background: linear-gradient(90deg,#f093fb,#f5576c);
+    border: none !important;
+    padding: 10px !important;
+    width: 45%;
+    border-radius: 27px !important;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 3px #999;
+    display: block !important;
+    
+}
+
+#login-modal .modal-footer{
+    background: #c4bdbd;
+    
+}
+
+
+
+.dropdown-menu.show {
+    min-width: 200px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.12);
+    padding: 11px;
+}
+
+@media (min-width:768px) {
+    #mycarousel {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+.container #mycarousel{
+    max-width: 100%;
+    height: auto;
+}
+
+.services{
+    color: #958585;
+}
+
+#card-row{
+ margin: 30px;
+ 
+}
+
+.pro-btn {
+    background: linear-gradient(147deg,#d488dd,#cc5665);
+    border: none !important
+}
+
+.container {
+    max-width: 1140vh;
+    width: auto;
+}
+
+#team{
+    color: black;
+}
+
+.card-avetar {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    margin: -72px auto 25px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.card-avetar img{
+    width: 100%;
+}
+
+#footer {
+    text-align: justify;
+    padding-top: 31px;
+}
+
+
