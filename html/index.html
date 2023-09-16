@@ -8,26 +8,23 @@
     <link rel="stylesheet" href="../css/style.css" />
     
 
+    <link 
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
       integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe"
-      crossorigin="anonymous">
-
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-    
-
-    
+      crossorigin="anonymous"/>
 
 </head>
 <body>
     
   <!--header-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 pt-3" id="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-3 overflow-hidden" id="main-menu">
             <a href="#" class="navbar-brand">فروشگاه آنلاین</a>
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
@@ -65,11 +62,39 @@
                 </ul>
 
                 <!--icon login person-->
-                <button class="btn text-white" data-toggle="modal" data-target="#login-modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                <div class="d-flex ai-center js-end">
+                  <a href="" class="btn text-white" data-toggle="modal" data-target="#login-modal" id="lodin-peson">
+                    <div class="d-flex ai-center js-center relative grow-1">
+                      <div class="d-flex ml-2 my-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+                          <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
                         </svg>
-                </button>
+                      </div>
+                      ورود | ثبت نام
+                    </div>
+                  </a>
+
+                  <span class="bg-200 mx-3 d-none d-block styles_BaseLayoutHeaderUserSection__divider__5TsZs"></span>
+                  <div class="pos-relative d-flex flex-column">
+                    <a href="" class="position-relative d-inline-flex pr-2 pl-0 p-lg-2 bg-000 radius py-2" data-cro-id="header-cart" style="color: white;">
+                      <div class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!--<div class="pos-relative d-flex flex-column">
+                  <a class="pos-relative d-inline-flex pr-2 pl-0 p-2-lg bg-000 radius py-2" data-cro-id="header-cart" data-testid="MINI_CART_ICON" href="#">
+                    <div class="d-flex">
+
+                    </div>
+                  </a>
+                </div>-->
+                  
+          
                 
             </div>
         </nav>
@@ -143,7 +168,7 @@
   <!--close modal-->
 
   <!--carousel begin-->
-  <div class="container"> 
+  
     <div id="mycarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -165,14 +190,13 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-</div>
 <!--ccarousel end-->
   
     </header>
   <!--header end-->
 
   <!--servises-->
-  <section class="services py-4">
+  <section class="services py-4 overflow-hidden">
     <div class="cuntainer">
       <!--text-->
       <div class="row">
@@ -183,7 +207,7 @@
       </div>
 
         <!--card-->
-        <div class="row my-0 mb-5" id="card-row">
+        <div class="row my-0 mb-5 mx-2" id="card-row">
           <!--card1-->
           <div class="col-12 col-md-4 py-3">
             <div class="card text-center border-0 shadow text-white" style="background: rgb(66, 66, 147);">
@@ -230,8 +254,8 @@
   <hr>
 
   <!--product begin-->
-  <section class="services">
-    <div class="cuntainer m-5">
+  <section class="services overflow-hidden">
+    <div class="cuntainer my-2">
       <!--text-->
       <div class="row mt-0">
         <div  class="col-12 text-center my-4">
@@ -240,7 +264,7 @@
         </div>
       </div>
       
-      <div class="row">
+      <div class="row mx-3">
         <div class="col-lg-3 col-md-6 my-3">
         <div class="card text-center">
           <img class="card-img-top" width="400px" height="350px" src="../img/p1.jpg" alt="">
@@ -343,8 +367,8 @@
 <!-- Instagram Section End -->
 
 <!--team begin-->
-<section class="services" id="team">
-  <div class="cuntainer m-5">
+<section class="services overflow-hidden" id="team">
+  <div class="cuntainer">
     <!--text-->
     <div class="row mt-0">
       <div  class="col-12 text-center my-4">
@@ -352,8 +376,8 @@
       </div>
     </div>
     
-    <div class="row">
-      <div class="col-sm-6 col-md-4 my-3">
+    <div class="row mx-3 my-3">
+      <div class="col-sm-6 col-md-4">
       <div class="card text-center">
         <img class="card-img-top" src="../img/team1.jpg" width="312" height="312" alt="">
         <div class="card-block">
@@ -366,7 +390,7 @@
     </div>
     </div>
 
-    <div class="col-sm-6 col-md-4 my-3">
+    <div class="col-sm-6 col-md-4">
       <div class="card text-center">
         <img class="card-img-top" src="../img/team2.jpg" width="312" height="312" alt="">
         <div class="card-block">
@@ -379,9 +403,9 @@
     </div>
     </div>
 
-    <div class="col-sm-6 col-md-4 my-3">
+    <div class="col-sm-6 col-md-4">
       <div class="card text-center">
-        <img class="card-img-top" src="../img/team3.jpg" alt="">
+        <img class="card-img-top" src="../img/team3.jpg" width="312" height="312" alt="">
         <div class="card-block">
           <div class="card-avetar">
             <img src="../img/admin3.jpg" width="100" height="150" alt="">
@@ -400,8 +424,8 @@
 
 <!-- Footer Section Begin -->
 <footer class="footer" style="color: rgb(19, 20, 20); background-color:rgb(210, 212, 212);">
-  <div class="container">
-      <div class="row">
+  <div class="container mt-5">
+      <div class="row pt-4">
           <!--<div class="col-lg-3 col-md-6 col-sm-6" id="footer">
               <div class="footer__about" >
                   <div class="footer__logo">
@@ -473,10 +497,11 @@
         </div>
 
       </div>
+      <hr>
 
       
       <div class="row">
-          <div class="col-lg-12 text-center mt-5">
+          <div class="col-lg-12 text-center m-3">
             <h5> همراه ما باشید!</h5>
               <div class="footer-logo p-2">
                 <!--instagram-->
@@ -493,6 +518,7 @@
                 </svg>
               </a>
               
+              
                 <!--linkdin-->
                 <a href="#" style="color: black;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -500,7 +526,7 @@
                 </svg>
               </a>
 
-                  <p class="p-3"> رضایت مشتری الویت ماست، پس با اطمینان خاطر از ما خرید کنید.</p>
+                  <p class="pt-3 pb-0"> رضایت مشتری الویت ماست، پس با اطمینان خاطر از ما خرید کنید.</p>
               </div>
           </div>
       </div>

@@ -36,6 +36,10 @@ body{
     color: white;
 }
 
+#lodin-peson{
+    border-color: cornsilk
+}
+
 .m-login{
     background: linear-gradient(90deg,#f093fb,#f5576c);
     border: none !important;
