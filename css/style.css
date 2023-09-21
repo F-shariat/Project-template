@@ -28,8 +28,11 @@ body{
        /*font-family: 'iransans';*/
 }
 
+
+
 #main-menu{
     direction: rtl;
+    overflow: visible !important
 }
 
 #main-menu .navbar-nav .nav-link{
@@ -120,4 +123,114 @@ body{
     padding-top: 31px;
 }
 
+/*mobile begin*/
+.breadcrumb-item {
+    background: #f3f2ee;
+    padding: 30px 0;
+}
 
+.breadcrumb_links_home span {
+    font-size: 15px;
+    color: #b7b7b7;
+    display: inline-block;
+}
+
+.spad {
+    padding-top: 78px;
+    padding-bottom: 78px;
+}
+
+.shop_sidebar_search{
+    margin-bottom: 45px;
+}
+
+.shop_sidebar_search form input{
+    width: 100%;
+    font-size: 15px;
+    color: #b7b7b7;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    height: 42px;
+}
+
+.shop_sidebar_search form button{
+    color: #b7b7b7;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    
+    /*right: 0;*/
+    padding: 0 15px;
+    top: 10px;
+    /*height: 100%;*/
+    left: 15px;
+}
+
+.shop_sidebar_accordion .card-body{
+    padding: 0;
+    padding-top: 3px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.shop_product_option {
+    border: 2px solid #ede6e6;
+    padding: 0px;
+    
+}
+
+ /*.product_item_picture{
+    overflow: visible;
+}*/
+
+.col-lg-4.col-md-6.col-sm-6 {
+    padding-top: 30px;
+}
+
+.product_item_text {
+    padding-top: 25px;
+    position: relative;
+}
+
+/*.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}*/
+
+/*style page number*/
+
+.product_pagination{
+    padding-top: 25px;
+    text-align: center;
+}
+
+nav.product_pagination {
+    direction: ltr;
+    
+}
+
+nav.product_pagination a {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    /*height: 30px;
+    width: 30px;*/
+    text-align: center;
+    line-height: 18px;
+    color: black;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #702222 !important ;
+    background-color: #e5e5ed !important;
+    border-color: #007bff3b !important;
+}
+
+.product_pagination a.active {
+    border-color: #111111;
+}

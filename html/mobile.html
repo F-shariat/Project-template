@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موبایل و تبلت</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    
+
+    <link 
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+      integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe"
+      crossorigin="anonymous"/>
+</head>
+<body>
+    <!--header begin-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-3 overflow-hidden" id="main-menu">
+            <a href="#" class="navbar-brand">فروشگاه آنلاین</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-md-between" id="main-nav">
+
+                <!--tab-bar-->
+                <ul class="navbar-nav">
+                    <!--<li class="nav-item">
+                        <a href="#" class="nav-link">صفحه اصلی</a>
+                    </li>-->
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">دسته بندی محصولات</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" >لپتاپ</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">موبایل</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">کامپیوتر</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">درباره ما</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">تماس با ما</a>
+                    </li>
+
+                </ul>
+
+                <!--icon login person-->
+                <div class="d-flex ai-center js-end">
+                  <a href="" class="btn text-white" data-toggle="modal" data-target="#login-modal" id="lodin-peson">
+                    <div class="d-flex ai-center js-center relative grow-1">
+                      <div class="d-flex ml-2 my-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+                          <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                        </svg>
+                      </div>
+                      ورود | ثبت نام
+                    </div>
+                  </a>
+
+                  <span class="bg-200 mx-3 d-none d-block styles_BaseLayoutHeaderUserSection__divider__5TsZs"></span>
+                  <div class="pos-relative d-flex flex-column">
+                    <a href="" class="position-relative d-inline-flex pr-2 pl-0 p-lg-2 bg-000 radius py-2" data-cro-id="header-cart" style="color: white;">
+                      <div class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>   
+            </div>
+        </nav>
+      <!--close navbar-->
+    </header>
+    <!--header end-->
+
+    <!--model begin-->
+    <div class="modal fade" id="login-modal">
+        <div class="modal-dialog">
+          <div class="modal-content border-0">
+            <div class="modal-header border-0">
+              <h5 class="modal-title fs-5">ورود به سایت</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body px-5 py-5">
+              <!--form-login-->
+              <form>
+    
+                <div class="form-group" >
+                  <label for="exampleInputEmail1" >نام کاربری</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1">
+                </div>
+    
+                <div style="direction: rtl; text-align: right;" class="form-group">
+                  <label for="exampleInputPassword1" class="form-label">رمز عبور</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+    
+                <button type="submit" class="btn btn-primary m-login" >ورود</button>
+    
+              </form>
+    
+            </div>
+            <div class="modal-footer border-0 py-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-white d-flex justify-content-center">
+                            ورود با :
+                        </div>
+                        <div class="col-12 d-flex justify-content-center mt-2">
+                            <!--icon-facebook-->
+                            <a href="#" class="text-white h2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                              </svg>
+                            </a>
+                            
+                            <!--icon-twitter-->
+                            <a href="#" class="text-white h2 mx-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                              </svg>
+                            </a>
+    
+                            <!--icon-gmail-->
+                            <a href="#" class="text-white h2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                              </svg>
+                            </a>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--close modal-->
+
+    <!--section navbar begin-->
+    <section class="breadcrumb-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_text">
+                        <h5>موبایل و تبلت</h5>
+                        <div class="breadcrumb_links_home">
+                            <a href="../html/index.html" style="color: black;">صفحه اصلی ></a>
+                            <span>موبایل و تبلت</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section navbar end-->
+
+    <!--shop section begin-->
+    <section class="shop spad">
+        <div class="container">
+            <div class="row">
+                <!--scrol filter begin-->
+                <div class="col-lg-3">
+                    <div class="shop_sidebar">
+                        <div class="shop_sidebar_search">
+                            <form action="#">
+                                <input type="text" placeholder="جستجو ...">
+                                <button type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                      </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <!--<div class="shop_sidebar_accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-heading p-3">
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne">برند</a>
+                                    </div>
+                                    <div class="collapse show" id="collapseOne" data-parent="accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop_sidebar_berand">
+                                                <ul class="nice-scroll">
+                                                    <li><a href="#">اپل</a></li>
+                                                    <li><a href="#">آیفون</a></li>
+                                                    <li><a href="#">سامسونگ</a></li>
+                                                    <li><a href="#">شیائومی</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <!--scrol filter end-->
+
+                <!--shop product begin-->
+                <div class="col-lg-9">
+                    <div class="shop_product_option">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <form class="shop_product_option_right">
+                                    <label >مرتب سازی بر اساس:</label>
+                                    <select>
+                                        <option value="">پر فروش ترین</option>
+                                        <option value="">بیشترین قیمت</option>
+                                        <option value="">کمترین قیمت</option>
+                                        <option value="">جدید ترین</option>
+                                        
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="shop_product_option_left">
+                                    <p>نمایش 12 محصول از 24</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product_item">
+                                <!--product img-->
+                                <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                                  <img src="../img/mobile/mobile1.jpg"  alt="" width="262px" height="260px">
+                                
+                                    <!--<ul>
+                                        <li><a href="#"><img src="" alt=""></a></li>
+                                        <li><a href="#"><img src="" alt=""></a></li>
+                                        <li><a href="#"><img src="" alt=""></a></li>
+                                    </ul>-->
+
+                                </div>
+
+                                <!--product text-->
+                                <div class="product_item_text">
+                                  <h6>گوشی سامسونگ</h6>
+                                  <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                                  <h5>3599000 تومان</h5>
+                                </div>
+
+                            </div>
+                      </div>
+                        <!--m2-->
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                          <div class="product_item">
+                              <!--product img-->
+                              <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                                <!--<img src="../img/product-2.jpg"  alt="" width="250px" height="270px">-->
+                                <img src="../img/mobile/mobile2.jpg" alt="" width="262px" height="260px">
+                                
+                                
+                                  <!--<ul>
+                                      <li><a href="#"><img src="" alt=""></a></li>
+                                      <li><a href="#"><img src="" alt=""></a></li>
+                                      <li><a href="#"><img src="" alt=""></a></li>
+                                  </ul>-->
+
+                              </div>
+
+                              <!--product text-->
+                              <div class="product_item_text">
+                                <h6>گوشی سامسونگ</h6>
+                                <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                                <h5>3599000 تومان</h5>
+                              </div>
+
+                          </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="product_item">
+                            <!--product img-->
+                            <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                              <img src="../img/mobile/mobile3.jpg"  alt="" width="262px" height="260px">
+                                <!--<ul>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                </ul>-->
+
+                            </div>
+
+                            <!--product text-->
+                            <div class="product_item_text">
+                              <h6>گوشی سامسونگ</h6>
+                              <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                              <h5>3599000 تومان</h5>
+                            </div>
+
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                      <div class="product_item">
+                          <!--product img-->
+                          <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                            <img src="../img/mobile/mobile4.jpg"  alt="" width="262px" height="260px">
+                              <!--<ul>
+                                  <li><a href="#"><img src="" alt=""></a></li>
+                                  <li><a href="#"><img src="" alt=""></a></li>
+                                  <li><a href="#"><img src="" alt=""></a></li>
+                              </ul>-->
+
+                          </div>
+
+                          <!--product text-->
+                          <div class="product_item_text">
+                            <h6>گوشی سامسونگ</h6>
+                            <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                            <h5>3599000 تومان</h5>
+                          </div>
+
+                      </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="product_item">
+                        <!--product img-->
+                        <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                          <img src="../img/mobile/mobile5.jpg"  alt="" width="262px" height="260px"width="250px" height="270px">
+                            <!--<ul>
+                                <li><a href="#"><img src="" alt=""></a></li>
+                                <li><a href="#"><img src="" alt=""></a></li>
+                                <li><a href="#"><img src="" alt=""></a></li>
+                            </ul>-->
+
+                        </div>
+
+                        <!--product text-->
+                        <div class="product_item_text">
+                          <h6>گوشی سامسونگ</h6>
+                          <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                          <h5>3599000 تومان</h5>
+                        </div>
+
+                    </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="product_item">
+                      <!--product img-->
+                      <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                        <img src="../img/mobile/mobile6.jpg"  alt="" width="262px" height="260px">
+                          <!--<ul>
+                              <li><a href="#"><img src="" alt=""></a></li>
+                              <li><a href="#"><img src="" alt=""></a></li>
+                              <li><a href="#"><img src="" alt=""></a></li>
+                          </ul>-->
+
+                      </div>
+
+                      <!--product text-->
+                      <div class="product_item_text">
+                        <h6>گوشی سامسونگ</h6>
+                        <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                        <h5>3599000 تومان</h5>
+                      </div>
+
+                  </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product_item">
+                    <!--product img-->
+                    <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                      <img src="../img/mobile/mobile7.jpg"  alt="" width="262px" height="260px">
+                        <!--<ul>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                        </ul>-->
+
+                    </div>
+
+                    <!--product text-->
+                    <div class="product_item_text">
+                      <h6>گوشی سامسونگ</h6>
+                      <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                      <h5>3599000 تومان</h5>
+                    </div>
+
+                </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="product_item">
+                  <!--product img-->
+                  <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                    <img src="../img/mobile/mobile8.jpg"  alt="" width="262px" height="260px">
+                      <!--<ul>
+                          <li><a href="#"><img src="" alt=""></a></li>
+                          <li><a href="#"><img src="" alt=""></a></li>
+                          <li><a href="#"><img src="" alt=""></a></li>
+                      </ul>-->
+
+                  </div>
+
+                  <!--product text-->
+                  <div class="product_item_text">
+                    <h6>گوشی سامسونگ</h6>
+                    <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                    <h5>3599000 تومان</h5>
+                  </div>
+
+              </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="product_item">
+                            <!--product img-->
+                            <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                              <img src="../img/mobile/mobile9.jpg"  alt="" width="262px" height="260px">
+                                <!--<ul>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                </ul>-->
+    
+                            </div>
+    
+                            <!--product text-->
+                            <div class="product_item_text">
+                              <h6>گوشی سامسونگ</h6>
+                              <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                              <h5>3599000 تومان</h5>
+                            </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="product_item">
+                            <!--product img-->
+                            <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                              <img src="../img/mobile/mobile10.jpg"  alt="" width="262px" height="260px">
+                                <!--<ul>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                </ul>-->
+    
+                            </div>
+    
+                            <!--product text-->
+                            <div class="product_item_text">
+                              <h6>گوشی سامسونگ</h6>
+                              <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                              <h5>3599000 تومان</h5>
+                            </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="product_item">
+                            <!--product img-->
+                            <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                              <img src="../img/mobile/mobile11.jpg"  alt="" width="262px" height="260px">
+                                <!--<ul>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                </ul>-->
+    
+                            </div>
+    
+                            <!--product text-->
+                            <div class="product_item_text">
+                              <h6>گوشی سامسونگ</h6>
+                              <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                              <h5>3599000 تومان</h5>
+                            </div>
+    
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="product_item">
+                            <!--product img-->
+                            <div class="product_item_picture set-bg" data-setbg="../img/product-2.jpg">
+                              <img src="../img/mobile/mobile12.jpg"  alt="" width="262px" height="260px">
+                                <!--<ul>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                    <li><a href="#"><img src="" alt=""></a></li>
+                                </ul>-->
+    
+                            </div>
+    
+                            <!--product text-->
+                            <div class="product_item_text">
+                              <h6>گوشی سامسونگ</h6>
+                              <a href="#" class="add-cart"> اضافه کردن به سبد خرید</a>
+                              <h5>3599000 تومان</h5>
+                            </div>
+    
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!--page number-->
+                    <div class="row">
+                      <div class="col-lg-12 d-flex justify-content-center mt-5">
+
+                        <nav class="product_pagination">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+
+                      </div>
+                    </div>
+                </div>
+                <!--shop product end-->
+
+            </div>
+        </div>
+    </section>
+    <!--shop section end-->
+
+<!-- Footer Section Begin -->
+<footer class="footer" style="color: rgb(19, 20, 20); background-color:rgb(210, 212, 212);">
+  <div class="container mt-5">
+      <div class="row pt-4">
+          <!--<div class="col-lg-3 col-md-6 col-sm-6" id="footer">
+              <div class="footer__about" >
+                  <div class="footer__logo">
+                      <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-browser-edge" viewBox="0 0 16 16">
+                        <path d="M9.482 9.341c-.069.062-.17.153-.17.309 0 .162.107.325.3.456.877.613 2.521.54 2.592.538h.002c.667 0 1.32-.18 1.894-.519A3.838 3.838 0 0 0 16 6.819c.018-1.316-.44-2.218-.666-2.664l-.04-.08C13.963 1.487 11.106 0 8 0A8 8 0 0 0 .473 5.29C1.488 4.048 3.183 3.262 5 3.262c2.83 0 5.01 1.885 5.01 4.797h-.004v.002c0 .338-.168.832-.487 1.244l.006-.006a.594.594 0 0 1-.043.041Z"/>
+                        <path d="M.01 7.753a8.137 8.137 0 0 0 .753 3.641 8 8 0 0 0 6.495 4.564 5.21 5.21 0 0 1-.785-.377h-.01l-.12-.075a5.45 5.45 0 0 1-1.56-1.463A5.543 5.543 0 0 1 6.81 5.8l.01-.004.025-.012c.208-.098.62-.292 1.167-.285.129.001.257.012.384.033a4.037 4.037 0 0 0-.993-.698l-.01-.005C6.348 4.282 5.199 4.263 5 4.263c-2.44 0-4.824 1.634-4.99 3.49Zm10.263 7.912c.088-.027.177-.054.265-.084-.102.032-.204.06-.307.086l.042-.002Z"/>
+                        <path d="M10.228 15.667a5.21 5.21 0 0 0 .303-.086l.082-.025a8.019 8.019 0 0 0 4.162-3.3.25.25 0 0 0-.331-.35c-.215.112-.436.21-.663.294a6.367 6.367 0 0 1-2.243.4c-2.957 0-5.532-2.031-5.532-4.644.002-.135.017-.268.046-.399a4.543 4.543 0 0 0-.46 5.898l.003.005c.315.441.707.821 1.158 1.121h.003l.144.09c.877.55 1.721 1.078 3.328.996Z"/>
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-browser-firefox" viewBox="0 0 16 16">
+                        <path d="M13.384 3.408c.535.276 1.22 1.152 1.556 1.963a7.98 7.98 0 0 1 .503 3.897l-.009.077a8.533 8.533 0 0 1-.026.224A7.758 7.758 0 0 1 .006 8.257v-.04c.016-.363.055-.724.114-1.082.01-.074.075-.42.09-.489l.01-.051a6.551 6.551 0 0 1 1.041-2.35c.217-.31.46-.6.725-.87.233-.238.487-.456.758-.65a1.5 1.5 0 0 1 .26-.137c-.018.268-.04 1.553.268 1.943h.003a5.744 5.744 0 0 1 1.868-1.443 3.597 3.597 0 0 0 .021 1.896c.07.047.137.098.2.152.107.09.226.207.454.433l.068.066.009.009a1.933 1.933 0 0 0 .213.18c.383.287.943.563 1.306.741.201.1.342.168.359.193l.004.008c-.012.193-.695.858-.933.858-2.206 0-2.564 1.335-2.564 1.335.087.997.714 1.839 1.517 2.357a3.72 3.72 0 0 0 .439.241c.076.034.152.065.228.094.325.115.665.18 1.01.194 3.043.143 4.155-2.804 3.129-4.745v-.001a3.005 3.005 0 0 0-.731-.9 2.945 2.945 0 0 0-.571-.37l-.003-.002a2.679 2.679 0 0 1 1.87.454 3.915 3.915 0 0 0-3.396-1.983c-.078 0-.153.005-.23.01l-.042.003V4.31h-.002a3.882 3.882 0 0 0-.8.14 6.454 6.454 0 0 0-.333-.314 2.321 2.321 0 0 0-.2-.152 3.594 3.594 0 0 1-.088-.383 4.88 4.88 0 0 1 1.352-.289l.05-.003c.052-.004.125-.01.205-.012C7.996 2.212 8.733.843 10.17.002l-.003.005.003-.001.002-.002h.002l.002-.002a.028.028 0 0 1 .015 0 .02.02 0 0 1 .012.007 2.408 2.408 0 0 0 .206.48c.06.103.122.2.183.297.49.774 1.023 1.379 1.543 1.968.771.874 1.512 1.715 2.036 3.02l-.001-.013a8.06 8.06 0 0 0-.786-2.353Z"/>
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-browser-edge" viewBox="0 0 16 16">
+                        <path d="M9.482 9.341c-.069.062-.17.153-.17.309 0 .162.107.325.3.456.877.613 2.521.54 2.592.538h.002c.667 0 1.32-.18 1.894-.519A3.838 3.838 0 0 0 16 6.819c.018-1.316-.44-2.218-.666-2.664l-.04-.08C13.963 1.487 11.106 0 8 0A8 8 0 0 0 .473 5.29C1.488 4.048 3.183 3.262 5 3.262c2.83 0 5.01 1.885 5.01 4.797h-.004v.002c0 .338-.168.832-.487 1.244l.006-.006a.594.594 0 0 1-.043.041Z"/>
+                        <path d="M.01 7.753a8.137 8.137 0 0 0 .753 3.641 8 8 0 0 0 6.495 4.564 5.21 5.21 0 0 1-.785-.377h-.01l-.12-.075a5.45 5.45 0 0 1-1.56-1.463A5.543 5.543 0 0 1 6.81 5.8l.01-.004.025-.012c.208-.098.62-.292 1.167-.285.129.001.257.012.384.033a4.037 4.037 0 0 0-.993-.698l-.01-.005C6.348 4.282 5.199 4.263 5 4.263c-2.44 0-4.824 1.634-4.99 3.49Zm10.263 7.912c.088-.027.177-.054.265-.084-.102.032-.204.06-.307.086l.042-.002Z"/>
+                        <path d="M10.228 15.667a5.21 5.21 0 0 0 .303-.086l.082-.025a8.019 8.019 0 0 0 4.162-3.3.25.25 0 0 0-.331-.35c-.215.112-.436.21-.663.294a6.367 6.367 0 0 1-2.243.4c-2.957 0-5.532-2.031-5.532-4.644.002-.135.017-.268.046-.399a4.543 4.543 0 0 0-.46 5.898l.003.005c.315.441.707.821 1.158 1.121h.003l.144.09c.877.55 1.721 1.078 3.328.996Z"/>
+                      </svg>
+                  </div>
+                  <p class="py-3">رضایت مشتری الویت ماست، پس با اطمینان خاطر از ما خرید کنید.</p>
+                  <a href="#"><img src="img/payment.png" alt=""></a>
+              </div>
+          </div>-->
+          <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+              <div class="footer__widget" id="footer">
+                  <h6>پر فروش ترین ها</h6>
+                  <ul>
+                      <li><a href="#">شیائومی نوت 11</a></li>
+                      <li><a href="#">گوشی a32</a></li>
+                      <li><a href="#">ساعت هوشمند</a></li>
+                      <li><a href="#">ایرپاد</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="footer__widget" id="footer"  >
+                  <h6>راهنمای خرید</h6>
+                  <ul>
+                      <li><a href="#">نحوه ثبت سفارش</a></li>
+                      <li><a href="#">رویه ارسال سفارش</a></li>
+                      <li><a href="#">شیوه های پرداخت</a></li>
+                      
+                  </ul>
+              </div>
+          </div>
+          <!--<div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+              <div class="footer__widget">
+                  <h6>درباره ما</h6>
+                  <div class="footer__newslatter">
+                      <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                      <form action="#">
+                          <input type="text" placeholder="Your email">
+                          <button type="submit"><span class="icon_mail_alt"></span></button>
+                      </form>
+                  </div>
+              </div>
+          </div>-->
+          <div class="col-md-3 col-sm-6">
+            <div class="footer__widget" id="footer"  >
+                <h6>درباره ما</h6>
+                <ul>
+                    <li><a href="#">قوانین و مقررات</a></li>
+                    <li><a href="#">چرا فروشگاه ما</a></li>
+                    <li><a href="#">زمان شروع مون</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+      </div>
+      <hr>
+
+      
+      <div class="row">
+          <div class="col-lg-12 text-center m-3">
+            <h5> همراه ما باشید!</h5>
+              <div class="footer-logo p-2">
+                <!--instagram-->
+                <a href="#" style="color: black;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+              </a>
+
+                <!--twitter-->
+                <a href="#" class="mx-3" style="color: black;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+              </a>
+              
+              
+                <!--linkdin-->
+                <a href="#" style="color: black;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg>
+              </a>
+
+                  <p class="pt-3 pb-0"> رضایت مشتری الویت ماست، پس با اطمینان خاطر از ما خرید کنید.</p>
+              </div>
+          </div>
+      </div>
+
+      
+  </div>
+</footer>
+<!-- Footer Section End -->
+    
+
+
+<!--script begin-->
+  <script
+  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous">
+</script>
+
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+crossorigin="anonymous">
+</script>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+crossorigin="anonymous">
+</script>
+<!--script end-->
+</body>
+</html>
