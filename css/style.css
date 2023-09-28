@@ -264,3 +264,7 @@ nav.product_pagination a {
     color: #ed1c24;
 }
 
+.lg\:block {
+    display: block;
+}
+
