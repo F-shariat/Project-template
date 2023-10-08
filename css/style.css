@@ -144,13 +144,17 @@ body{
     margin-bottom: 45px;
 }
 
+.shop_sidebar_search form{
+    position: relative;
+}
+
 .shop_sidebar_search form input{
     width: 100%;
     font-size: 15px;
     color: #b7b7b7;
-    padding: 15px;
+    padding: 0 15px;
     border: 1px solid #e5e5e5;
-    height: 42px;
+    height: 46px;
 }
 
 .shop_sidebar_search form button{
@@ -159,12 +163,10 @@ body{
     border: none;
     background: transparent;
     position: absolute;
-    
-    /*right: 0;*/
     padding: 0 15px;
-    top: 10px;
-    /*height: 100%;*/
-    left: 15px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 form.shop_product_option_right {
@@ -172,9 +174,13 @@ form.shop_product_option_right {
     padding-top: 2px;
 }
 
+form.shop_product_option_right label{
+    margin-bottom: 0;
+}
+
 .shop_product_option_left p {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     text-align: end;
     padding-left: 15px;
 }
@@ -187,9 +193,13 @@ form.shop_product_option_right {
 }
 
 .shop_product_option {
+    height: 46px;
+    padding: 0 5px;
     border: 1px solid #e5e5e5;
-    padding: 0px;
-    
+}
+
+.shop_product_option > .row > div{
+    height: fit-content;
 }
 
  /*.product_item_picture{
@@ -268,3 +278,19 @@ nav.product_pagination a {
     display: block;
 }
 
+/*fotter*/
+.footer__widget .location_icon{
+    float: right;
+}
+
+.footer ul li{
+    line-height: 32px;
+}
+
+.location_phon_email{
+    color: rgb(26 137 215);
+}
+
+.color_icon{
+   color: rgb(129, 125, 125);
+}
